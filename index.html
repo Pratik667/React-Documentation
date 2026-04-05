@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Hooks Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="mobile-menu-toggle" class="mobile-menu-toggle" aria-label="Toggle navigation">Topics</button>
+    <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Topics</h2>
+            <div class="tabs">
+                <button class="tab-button active" data-topic="hooks">Hooks</button>
+                <button class="tab-button" data-topic="redux">React Redux</button>
+                <button class="tab-button" data-topic="assessment">Assessment</button>
+            </div>
+            <div class="sub-tabs" id="hooks-sub-tabs">
+                <button class="sub-tab-button active" data-hook="useState">useState</button>
+                <button class="sub-tab-button" data-hook="useReducer">useReducer</button>
+                <button class="sub-tab-button" data-hook="useLayoutEffect">useLayoutEffect</button>
+                <button class="sub-tab-button" data-hook="useEffect">useEffect</button>
+                <button class="sub-tab-button" data-hook="useContext">useContext</button>
+                <button class="sub-tab-button" data-hook="useRef">useRef</button>
+                <button class="sub-tab-button" data-hook="useFormAction">useFormAction & useFormStatus</button>
+                <button class="sub-tab-button" data-hook="useTransition">useTransition</button>
+                <button class="sub-tab-button" data-hook="useDeferredValue">useDeferredValue</button>
+                <button class="sub-tab-button" data-hook="useOptimistic">useOptimistic</button>
+                <button class="sub-tab-button" data-hook="useMemo">useMemo & useCallback</button>
+            </div>
+            <div class="sub-tabs" id="assessment-sub-tabs" style="display: none;">
+                <button class="sub-tab-button active" data-set="set1">Practice Set 1</button>
+                <button class="sub-tab-button" data-set="set2">Practice Set 2</button>
+                <button class="sub-tab-button" data-set="set3">Practice Set 3</button>
+                <button class="sub-tab-button" data-set="set4">Practice Set 4</button>
+                <button class="sub-tab-button" data-set="set5">Practice Set 5</button>
+                <button class="sub-tab-button" data-set="set6">Practice Set 6</button>
+                <button class="sub-tab-button" data-set="set7">Practice Set 7</button>
+                <button class="sub-tab-button" data-set="set8">Practice Set 8</button>
+                <button class="sub-tab-button" data-set="set9">Practice Set 9</button>
+                <button class="sub-tab-button" data-set="set10">Practice Set 10</button>
+            </div>
+        </div>
+        <div class="content">
+            <div id="content-area">
+                <!-- Content will be loaded here -->
+            </div>
+        </div>
+    </div>
+    <script src="practise/practice-sets.js"></script>
+    <script src="assessment.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,446 @@
+{
+  "set1": [
+    {
+      "question": "What does useState hook do?",
+      "options": {
+        "a": "Manage state values in a functional component",
+        "b": "Run side effects after render",
+        "c": "Create a context provider",
+        "d": "Access DOM nodes directly"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "When should you use useReducer instead of useState?",
+      "options": {
+        "a": "When state updates are always simple",
+        "b": "When state logic is complex and depends on previous state",
+        "c": "When you need to memoize a value",
+        "d": "When you need a DOM reference"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "Which hook runs before the browser paints the updated DOM?",
+      "options": {
+        "a": "useEffect",
+        "b": "useReducer",
+        "c": "useRef",
+        "d": "useLayoutEffect"
+      },
+      "answer": "d"
+    },
+    {
+      "question": "What is the purpose of the dependency array in useEffect?",
+      "options": {
+        "a": "To define the component's initial state",
+        "b": "To specify when the effect should re-run",
+        "c": "To store context values",
+        "d": "To track DOM nodes"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "How does useContext help your component?",
+      "options": {
+        "a": "By creating a local state value",
+        "b": "By preventing prop drilling through the tree",
+        "c": "By optimizing expensive calculations",
+        "d": "By making the component rerender only once"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What value does useRef preserve between renders?",
+      "options": {
+        "a": "A value that triggers re-render when changed",
+        "b": "A memoized computation",
+        "c": "A mutable reference that does not trigger rerender",
+        "d": "The context provider value"
+      },
+      "answer": "c"
+    },
+    {
+      "question": "What does useFormStatus provide?",
+      "options": {
+        "a": "The current route path",
+        "b": "Form submission status such as pending",
+        "c": "A memoized form value",
+        "d": "A ref to the form element"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What does useFormAction allow you to do?",
+      "options": {
+        "a": "Read the current form values",
+        "b": "Trigger a form action programmatically",
+        "c": "Create a form context provider",
+        "d": "Handle form state with redux"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "useTransition is most useful for which kind of update?",
+      "options": {
+        "a": "Urgent updates like typing input",
+        "b": "Non-urgent updates like list filtering",
+        "c": "Styling updates only",
+        "d": "Context updates"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What does useDeferredValue return?",
+      "options": {
+        "a": "A debounced callback",
+        "b": "A deferred version of the value",
+        "c": "A reference to the DOM node",
+        "d": "A reducer function"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "Which hook caches a computed value?",
+      "options": {
+        "a": "useMemo",
+        "b": "useCallback",
+        "c": "useEffect",
+        "d": "useRef"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "Which hook returns a memoized function reference?",
+      "options": {
+        "a": "useState",
+        "b": "useCallback",
+        "c": "useReducer",
+        "d": "useMemo"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "useOptimistic is useful when you want to:",
+      "options": {
+        "a": "Delay rendering until data arrives",
+        "b": "Update UI before the server action completes",
+        "c": "Create a context provider",
+        "d": "Measure the DOM layout"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What does dispatch do in useReducer?",
+      "options": {
+        "a": "Directly set the state value",
+        "b": "Trigger the reducer with an action",
+        "c": "Create a new ref object",
+        "d": "Re-render the parent component"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What does useState return?",
+      "options": {
+        "a": "A state value and a setter function",
+        "b": "A reducer and a dispatch function",
+        "c": "A context provider and consumer",
+        "d": "A ref object"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "useEffect with an empty dependency array runs when?",
+      "options": {
+        "a": "Every render",
+        "b": "Only on mount",
+        "c": "Only when dependencies change",
+        "d": "Never"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What is a common use case for useRef?",
+      "options": {
+        "a": "Storing a timer ID that should persist",
+        "b": "Running effects after every render",
+        "c": "Memoizing a computation value",
+        "d": "Creating a redux store"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "useContext reads data from:",
+      "options": {
+        "a": "The nearest matching Provider in the tree",
+        "b": "The component's local state",
+        "c": "The DOM node attributes",
+        "d": "A reducer function"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "Which hook can create visible flicker if used for measurements?",
+      "options": {
+        "a": "useEffect",
+        "b": "useLayoutEffect",
+        "c": "useMemo",
+        "d": "useCallback"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "When is useTransition not a good choice?",
+      "options": {
+        "a": "For slow list filtering",
+        "b": "For urgent input updates",
+        "c": "For low priority background work",
+        "d": "For showing a pending state"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What happens if useDeferredValue input changes quickly?",
+      "options": {
+        "a": "The deferred value updates instantly",
+        "b": "React abandons stale background work and uses the newest value",
+        "c": "The component unmounts",
+        "d": "The effect runs twice"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "Why use useMemo?",
+      "options": {
+        "a": "To store refs to DOM nodes",
+        "b": "To memoize expensive calculations",
+        "c": "To handle form submission",
+        "d": "To dispatch actions"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "Why use useCallback?",
+      "options": {
+        "a": "To cache a function so its reference is stable",
+        "b": "To render elements conditionally",
+        "c": "To fetch API data",
+        "d": "To update local state"
+      },
+      "answer": "a"
+    }
+  ],
+  "set2": [
+    {
+      "question": "Which hook is best for DOM measurements?",
+      "options": {
+        "a": "useReducer",
+        "b": "useLayoutEffect",
+        "c": "useContext",
+        "d": "useMemo"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What does the cleanup function in useEffect do?",
+      "options": {
+        "a": "Runs before the next effect or unmount",
+        "b": "Runs only on first render",
+        "c": "Prevents rerendering",
+        "d": "Sets state immediately"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "What is the primary benefit of useContext?",
+      "options": {
+        "a": "Avoiding prop drilling",
+        "b": "Managing local state",
+        "c": "Running animations",
+        "d": "Creating reducers"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "Which hook can keep a value without triggering a rerender?",
+      "options": {
+        "a": "useState",
+        "b": "useMemo",
+        "c": "useRef",
+        "d": "useEffect"
+      },
+      "answer": "c"
+    },
+    {
+      "question": "How does useTransition improve responsiveness?",
+      "options": {
+        "a": "By making all updates urgent",
+        "b": "By marking non-urgent updates as transition work",
+        "c": "By caching form values",
+        "d": "By using useMemo internally"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "When using useDeferredValue, the UI remains responsive because:",
+      "options": {
+        "a": "The original value updates slowly",
+        "b": "The deferred value lags behind the urgent value",
+        "c": "The component never rerenders",
+        "d": "The value is stored in a ref"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "Which hook would you use for a theme switcher with multiple action types?",
+      "options": {
+        "a": "useState",
+        "b": "useReducer",
+        "c": "useMemo",
+        "d": "useContext"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What is true about a reducer function?",
+      "options": {
+        "a": "It can mutate state directly",
+        "b": "It should be pure with no side effects",
+        "c": "It must return a Promise",
+        "d": "It only runs on unmount"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "A custom hook should:",
+      "options": {
+        "a": "Always use useMemo",
+        "b": "Start with the word 'use'",
+        "c": "Return a DOM element",
+        "d": "Be a class component"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "When should you avoid useLayoutEffect?",
+      "options": {
+        "a": "For DOM measurements",
+        "b": "For data fetching that does not affect layout",
+        "c": "When you need synchronous updates",
+        "d": "When you need to block paint"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "Which hook is best for reading a context value?",
+      "options": {
+        "a": "useReducer",
+        "b": "useCallback",
+        "c": "useContext",
+        "d": "useState"
+      },
+      "answer": "c"
+    },
+    {
+      "question": "What does useMemo help prevent?",
+      "options": {
+        "a": "Recreating a function on every render",
+        "b": "Recomputing an expensive value unnecessarily",
+        "c": "Unconditional rerenders",
+        "d": "Side effects"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "useCallback is most useful when you:",
+      "options": {
+        "a": "Need a stable function reference across renders",
+        "b": "Need to delay a value",
+        "c": "Want a DOM reference",
+        "d": "Need to manage local state"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "What is a practical use of useFormStatus?",
+      "options": {
+        "a": "Disable the submit button while pending",
+        "b": "Create a reducer for the form",
+        "c": "Memoize the form values",
+        "d": "Store the form action URL"
+      },
+      "answer": "a"
+    },
+    {
+      "question": "useFormAction works with:",
+      "options": {
+        "a": "Only class components",
+        "b": "Custom form triggers and server actions",
+        "c": "Context providers only",
+        "d": "Redux reducers"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "useOptimistic is designed to work inside:",
+      "options": {
+        "a": "A Promise resolve callback",
+        "b": "An Action or transition update",
+        "c": "A layout effect only",
+        "d": "A normal event handler"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What does useDeferredValue delay?",
+      "options": {
+        "a": "The original state updates",
+        "b": "A derived value until the browser is free",
+        "c": "The next render cycle always",
+        "d": "The cleanup function"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "If you want to show a loader during a transition, use:",
+      "options": {
+        "a": "useMemo",
+        "b": "useTransition and isPending",
+        "c": "useRef",
+        "d": "useContext"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "Which hook can help prevent a stale UI while typing?",
+      "options": {
+        "a": "useState",
+        "b": "useTransition or useDeferredValue",
+        "c": "useReducer",
+        "d": "useMemo"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What should a reducer return?",
+      "options": {
+        "a": "A DOM node",
+        "b": "The updated state",
+        "c": "A side effect",
+        "d": "An event listener"
+      },
+      "answer": "b"
+    },
+    {
+      "question": "What happens when useMemo dependency changes?",
+      "options": {
+        "a": "The memoized value recalculates",
+        "b": "The component unmounts",
+        "c": "The function reference changes",
+        "d": "The effect cleanup runs"
+      },
+      "answer": "a"
+    }
+  ]
+}
